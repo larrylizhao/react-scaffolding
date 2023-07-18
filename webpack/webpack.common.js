@@ -12,7 +12,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.jsx?$/,
+                test: /\.[t|j]sx?$/,
                 exclude: /node_modules/,
                 loader: 'babel-loader',
             },
@@ -30,6 +30,9 @@ module.exports = {
         })
     ],
     resolve: {
+        alias: {
+            '@Components': path.join(__dirname, '../src/components'),
+        },
         extensions: ['.tsx', '.ts', '.js', '.jsx', '.json'],
     }
 }
