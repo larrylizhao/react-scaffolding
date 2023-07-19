@@ -20,5 +20,6 @@
     ],
     "rules": {
         "@typescript-eslint/semi": "off"
-    }
+    },
+    "ignorePatterns": ["webpack/"]
 }
