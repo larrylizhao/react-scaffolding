@@ -10,6 +10,12 @@
     "lint:fix": "eslint --fix .",
     "prepare": "husky install"
   },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,html,css,scss}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
+  },
   "dependencies": {
     "@babel/runtime-corejs3": "^7.22.6",
     "core-js": "3",
@@ -36,13 +42,14 @@
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.32.2",
     "html-webpack-plugin": "^5.5.3",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.2.3",
     "prettier": "^3.0.0",
     "typescript": "*",
     "webpack": "^5.88.1",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1",
-    "webpack-merge": "^5.9.0",
-    "husky": "^8.0.0"
+    "webpack-merge": "^5.9.0"
   },
   "repository": "https://github.com/larrylizhao/react-scaffolding.git",
   "author": "larryli <lzhao@atlashxm.com>"
