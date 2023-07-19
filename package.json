@@ -5,7 +5,9 @@
   "license": "MIT",
   "scripts": {
     "start": "webpack serve --config webpack/webpack.dev.js",
-    "build": "webpack --config webpack/webpack.prod.js"
+    "build": "webpack --config webpack/webpack.prod.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
   },
   "dependencies": {
     "@babel/runtime-corejs3": "^7.22.6",
@@ -21,13 +23,22 @@
     "@babel/preset-typescript": "^7.22.5",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^5.50.0",
     "babel-loader": "^9.1.3",
     "clean-webpack-plugin": "^4.0.0",
+    "eslint": "^8.0.1",
+    "eslint-config-standard-with-typescript": "^36.1.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.32.2",
     "html-webpack-plugin": "^5.5.3",
-    "typescript": "^5.1.6",
+    "typescript": "*",
     "webpack": "^5.88.1",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1",
     "webpack-merge": "^5.9.0"
-  }
+  },
+  "repository": "https://github.com/larrylizhao/react-scaffolding.git",
+  "author": "larryli <lzhao@atlashxm.com>"
 }
