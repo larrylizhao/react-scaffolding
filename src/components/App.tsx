@@ -1,4 +1,4 @@
-import React, { type ReactElement } from "react";
+import React, { type ReactElement } from 'react';
 
 interface AppProps {
   num: number;
