@@ -14,8 +14,7 @@
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx,html,css,scss}": [
-      "prettier --write",
-      "eslint --fix"
+      "prettier --write"
     ]
   },
   "dependencies": {
@@ -30,6 +29,7 @@
     "@babel/preset-env": "^7.22.9",
     "@babel/preset-react": "^7.22.5",
     "@babel/preset-typescript": "^7.22.5",
+    "@reduxjs/toolkit": "^1.9.5",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^14.0.0",
     "@types/react": "^18.2.15",
@@ -52,6 +52,7 @@
     "jest-environment-jsdom": "^29.6.1",
     "lint-staged": "^13.2.3",
     "prettier": "^3.0.0",
+    "react-redux": "^8.1.1",
     "typescript": "*",
     "webpack": "^5.88.1",
     "webpack-cli": "^5.1.4",

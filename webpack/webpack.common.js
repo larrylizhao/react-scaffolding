@@ -31,10 +31,9 @@ module.exports = {
   ],
   resolve: {
     alias: {
-      '@api': path.join(__dirname, '../src/api'),
-      '@components': path.join(__dirname, '../src/components'),
-      '@app': path.join(__dirname, '../src/app'),
-      '@features': path.join(__dirname, '../src/features')
+      '@Api': path.join(__dirname, '../src/api'),
+      '@Components': path.join(__dirname, '../src/components'),
+      '@Redux': path.join(__dirname, '../src/redux')
     },
     extensions: ['.tsx', '.ts', '.js', '.jsx', '.json']
   }
