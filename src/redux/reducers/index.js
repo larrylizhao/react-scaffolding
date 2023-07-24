@@ -9,7 +9,7 @@ import counterReducer from './counterSlice';
 export * from './counterSlice';
 
 const reducer = {
-  counterReducer
+  counter: counterReducer
 };
 
 export default reducer;
