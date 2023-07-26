@@ -2,6 +2,7 @@
   Reducers
  */
 import counterReducer from './counterSlice';
+import userReducer from './userSlice';
 
 /*
   Actions
@@ -9,7 +10,8 @@ import counterReducer from './counterSlice';
 export * from './counterSlice';
 
 const reducer = {
-  counter: counterReducer
+  counter: counterReducer,
+  user: userReducer
 };
 
 export default reducer;

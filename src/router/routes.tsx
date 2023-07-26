@@ -1,12 +1,13 @@
 import React, { type ReactElement } from 'react';
-import PageLayout from '@Components/common/Layouts/PageLayout';
-
 import { Routes, Route } from 'react-router-dom';
-import AuthWrapper from './AuthWrapper';
+
+import PageLayout from '@Components/Layouts/PageLayout';
 import PublicPage from '@Components/pages/PublicPage';
 import LoginPage from '@Components/pages/Login';
 import ProtectedPage from '@Components/pages/ProtectedPage';
 import Dashboard from '@Components/pages/Dashboard';
+
+import AuthWrapper from './AuthWrapper';
 
 const AppRoute = (): ReactElement => {
   return (

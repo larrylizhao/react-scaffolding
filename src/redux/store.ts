@@ -1,7 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit';
 import reducer from './reducers';
 
-const store = configureStore({
+export const store = configureStore({
   reducer,
   preloadedState: { counter: { value: 1 } },
   devTools:
