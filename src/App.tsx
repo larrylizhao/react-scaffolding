@@ -1,9 +1,17 @@
 import React, { type ReactElement } from 'react';
+import AppRoute from './router/routes';
+import { Provider } from 'react-redux';
+import { store } from './redux/store';
+import { BrowserRouter } from 'react-router-dom';
 
-interface AppProps {
-  num: number;
-}
-
-const App = ({ num }: AppProps): ReactElement => <h1>Total Number: {num}</h1>;
+const App = (): ReactElement => {
+  return (
+    <Provider store={store}>
+      <BrowserRouter>
+        <AppRoute />
+      </BrowserRouter>
+    </Provider>
+  );
+};
 
 export default App;
