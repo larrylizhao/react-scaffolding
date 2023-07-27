@@ -7,9 +7,15 @@
     "strictNullChecks": true,
     "allowSyntheticDefaultImports": true,
     "noImplicitAny": true,
+    "forceConsistentCasingInFileNames": true,
     "moduleResolution": "Node",
+    "baseUrl": "./",
+    "lib": ["DOM", "ESNext"],
+    "noEmit": true,
     "paths": {
+      "@Api/*": ["src/api/*"],
       "@Components/*": ["src/components/*"],
-    }
+      "@Redux/*": ["src/redux/*"]
+    },
   }
 }
