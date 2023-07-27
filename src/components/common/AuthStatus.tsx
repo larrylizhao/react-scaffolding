@@ -1,8 +1,8 @@
 import React, { type ReactElement } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import type { RootState } from '../../redux/store';
-import { logout } from '../../redux/reducers/userSlice';
+import type { RootState } from '@Redux/store';
+import { logout } from '@Redux/reducers';
 
 const AuthStatus = (): ReactElement => {
   const user = useSelector((state: RootState) => state.user);

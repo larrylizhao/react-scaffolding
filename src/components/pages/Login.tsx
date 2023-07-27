@@ -1,6 +1,6 @@
 import React, { type ReactElement } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { login } from '../../redux/reducers/userSlice';
+import { login } from '@Redux/reducers';
 import { useDispatch } from 'react-redux';
 
 const LoginPage = (): ReactElement => {
