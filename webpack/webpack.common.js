@@ -33,6 +33,7 @@ module.exports = {
     alias: {
       '@Api': path.join(__dirname, '../src/api'),
       '@Components': path.join(__dirname, '../src/components'),
+      '@Pages': path.join(__dirname, '../src/pages'),
       '@Redux': path.join(__dirname, '../src/redux')
     },
     extensions: ['.tsx', '.ts', '.js', '.jsx', '.json']

@@ -10,10 +10,7 @@ interface IPost {
 const postApi = baseApi.injectEndpoints({
   endpoints: (builder) => ({
     getPostsList: builder.query<IPost[], void>({
-      query: () => '/posts',
-      transformResponse: async (response: { data: IPost[] }) => {
-        return response.data;
-      }
+      query: () => '/posts'
     }),
     getPostsById: builder.query<IPost, number>({
       query: (id: number) => `/posts/${id}`

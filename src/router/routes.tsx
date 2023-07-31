@@ -1,32 +1,35 @@
 import React, { type ReactElement } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import LoginPage from '@Pages/Login';
+import ProtectedPage from '@Pages/ProtectedPage';
+import Dashboard from '@Pages/Dashboard';
+import Posts from '@Pages/Posts';
 
-import PageLayout from '@Components/Layouts/PageLayout';
-import PublicPage from '@Components/pages/PublicPage';
-import LoginPage from '@Components/pages/Login';
-import ProtectedPage from '@Components/pages/ProtectedPage';
-import Dashboard from '@Components/pages/Dashboard';
-
-import AuthWrapper from './AuthWrapper';
+const routes = createBrowserRouter([
+  {
+    path: '/',
+    element: Dashboard
+  },
+  {
+    path: 'dashboard',
+    element: Dashboard
+  },
+  {
+    path: 'login',
+    element: LoginPage
+  },
+  {
+    path: 'protected',
+    element: ProtectedPage
+  },
+  {
+    path: 'posts',
+    element: Posts
+  }
+]);
 
 const AppRoute = (): ReactElement => {
-  return (
-    <Routes>
-      <Route path="/" element={<PageLayout />}>
-        <Route index element={<PublicPage />} />
-        <Route path="dashboard" element={<Dashboard />} />
-        <Route path="login" element={<LoginPage />} />
-        <Route
-          path="/protected"
-          element={
-            <AuthWrapper>
-              <ProtectedPage />
-            </AuthWrapper>
-          }
-        />
-      </Route>
-    </Routes>
-  );
+  return <RouterProvider router={routes} />;
 };
 
 export default AppRoute;

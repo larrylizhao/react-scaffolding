@@ -3,6 +3,9 @@ import { useSelector } from 'react-redux';
 import { Navigate, useLocation } from 'react-router-dom';
 import type { RootState } from '@Redux/store';
 
+/*
+  AuthWrapper should come from Container app maybe? Just keep this as a placeholder, in case we also need AuthWrapper
+ */
 const AuthWrapper = ({
   children
 }: {

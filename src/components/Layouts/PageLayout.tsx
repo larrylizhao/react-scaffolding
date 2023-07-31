@@ -2,6 +2,9 @@ import React, { type ReactElement } from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import AuthStatus from '../common/AuthStatus';
 
+/*
+  Layouts might come from container app, keep this as a placeholder in case we also need one
+ */
 const PageLayout = (): ReactElement => {
   return (
     <div>

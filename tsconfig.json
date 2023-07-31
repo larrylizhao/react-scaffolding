@@ -15,6 +15,7 @@
     "paths": {
       "@Api/*": ["src/api/*"],
       "@Components/*": ["src/components/*"],
+      "@Pages/*": ["src/pages/*"],
       "@Redux/*": ["src/redux/*"]
     },
   }
