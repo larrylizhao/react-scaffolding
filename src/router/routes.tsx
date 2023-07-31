@@ -1,11 +1,11 @@
 import React, { type ReactElement } from 'react';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 import LoginPage from '@Pages/Login';
 import ProtectedPage from '@Pages/ProtectedPage';
 import Dashboard from '@Pages/Dashboard';
 import Posts from '@Pages/Posts';
 
-const routes = createBrowserRouter([
+const routes = createHashRouter([
   {
     path: '/',
     element: Dashboard
