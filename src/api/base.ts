@@ -6,6 +6,6 @@ export const baseApi = createApi({
     baseUrl: 'https://jsonplaceholder.typicode.com'
   }),
   keepUnusedDataFor: 5,
-  refetchOnMountOrArgChange: 2,
+  refetchOnMountOrArgChange: 5,
   endpoints: () => ({})
 });
