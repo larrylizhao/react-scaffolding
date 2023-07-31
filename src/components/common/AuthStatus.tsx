@@ -1,10 +1,10 @@
-import React, { type ReactElement } from 'react';
+import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import type { RootState } from '@Redux/store';
 import { logout } from '@Redux/reducers';
 
-const AuthStatus = (): ReactElement => {
+const AuthStatus = () => {
   const user = useSelector((state: RootState) => state.user);
   const dispatch = useDispatch();
   const navigate = useNavigate();

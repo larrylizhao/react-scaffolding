@@ -1,6 +1,6 @@
-import React, { type ReactElement } from 'react';
+import React from 'react';
 
-const ProtectedPage = (): ReactElement => {
+const ProtectedPage = () => {
   return <h3>Protected Page</h3>;
 };
 

@@ -1,9 +1,9 @@
-import React, { type ReactElement } from 'react';
+import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { login } from '@Redux/reducers';
 import { useDispatch } from 'react-redux';
 
-const LoginPage = (): ReactElement => {
+const LoginPage = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const dispatch = useDispatch();

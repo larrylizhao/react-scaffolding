@@ -1,4 +1,4 @@
-import React, { type ReactElement } from 'react';
+import React from 'react';
 import { createHashRouter, RouterProvider } from 'react-router-dom';
 import LoginPage from '@Pages/Login';
 import ProtectedPage from '@Pages/ProtectedPage';
@@ -8,27 +8,27 @@ import Posts from '@Pages/Posts';
 const routes = createHashRouter([
   {
     path: '/',
-    element: Dashboard
+    element: <Dashboard />
   },
   {
     path: 'dashboard',
-    element: Dashboard
+    element: <Dashboard />
   },
   {
     path: 'login',
-    element: LoginPage
+    element: <LoginPage />
   },
   {
     path: 'protected',
-    element: ProtectedPage
+    element: <ProtectedPage />
   },
   {
     path: 'posts',
-    element: Posts
+    element: <Posts />
   }
 ]);
 
-const AppRoute = (): ReactElement => {
+const AppRoute = () => {
   return <RouterProvider router={routes} />;
 };
 

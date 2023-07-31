@@ -1,6 +1,6 @@
-import React, { type ReactElement } from 'react';
+import React from 'react';
 
-const Dashboard = (): ReactElement => {
+const Dashboard = () => {
   return <h3>Dashboard</h3>;
 };
 

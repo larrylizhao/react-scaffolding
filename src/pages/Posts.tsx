@@ -1,4 +1,4 @@
-import React, { type ReactElement } from 'react';
+import React from 'react';
 import {
   useGetPostsListQuery,
   useGetPostsByIdQuery,
@@ -7,7 +7,7 @@ import {
   useModifyPostByIdMutation
 } from '@Api/posts';
 
-const Posts = (): ReactElement => {
+const Posts = () => {
   const { data, error, isLoading } = useGetPostsListQuery();
   console.log(data);
   return (

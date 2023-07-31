@@ -1,6 +1,6 @@
-import React, { type ReactElement } from 'react';
+import React from 'react';
 
-const PublicPage = (): ReactElement => {
+const PublicPage = () => {
   return <h3>Public</h3>;
 };
 

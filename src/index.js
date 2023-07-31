@@ -4,4 +4,4 @@ import App from './App';
 
 const container = document.getElementById('app');
 const root = createRoot(container);
-root.render(<App num={1} />);
+root.render(<App />);

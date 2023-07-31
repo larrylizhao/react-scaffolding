@@ -1,11 +1,11 @@
-import React, { type ReactElement } from 'react';
+import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import AuthStatus from '../common/AuthStatus';
 
 /*
   Layouts might come from container app, keep this as a placeholder in case we also need one
  */
-const PageLayout = (): ReactElement => {
+const PageLayout = () => {
   return (
     <div>
       <h1>Page Layout</h1>
