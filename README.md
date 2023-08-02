@@ -10,3 +10,7 @@ Tech stacks:
 * Redux tool kit for state management
 * Redux tool kit Query for data fetching and caching
 * Basic routing
+
+Plan to have
+* msw integration for testing
+  
