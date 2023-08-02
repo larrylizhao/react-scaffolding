@@ -34,7 +34,8 @@ module.exports = {
       '@Api': path.join(__dirname, '../src/api'),
       '@Components': path.join(__dirname, '../src/components'),
       '@Pages': path.join(__dirname, '../src/pages'),
-      '@Redux': path.join(__dirname, '../src/redux')
+      '@Redux': path.join(__dirname, '../src/redux'),
+      '@Utils': path.join(__dirname, '../src/utils')
     },
     extensions: ['.tsx', '.ts', '.js', '.jsx', '.json']
   }

@@ -13,8 +13,9 @@
     "coverage": "jest --coverage"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx,html,css,scss}": [
-      "prettier --write"
+    "src/**/!(test)*.{js,jsx,ts,tsx}": [
+      "eslint src/ --fix",
+      "jest --bail --findRelatedTests"
     ]
   },
   "dependencies": {

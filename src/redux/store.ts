@@ -14,6 +14,20 @@ export const store = configureStore({
       : false
 });
 
+// Set up the store for testing purpose
+export const setupStore = (preloadedState) => {
+  return configureStore({
+    reducer,
+    preloadedState,
+    middleware: (getDefaultMiddleware) =>
+      getDefaultMiddleware().concat(baseApi.middleware),
+    devTools:
+      process.env.NODE_ENV !== 'production'
+        ? { trace: true, traceLimit: 25 }
+        : false
+  });
+};
+
 // Infer the `RootState` and `AppDispatch` types from the store itself
 export type RootState = ReturnType<typeof store.getState>;
 // Inferred type: {posts: PostsState, comments: CommentsState, users: UsersState}
