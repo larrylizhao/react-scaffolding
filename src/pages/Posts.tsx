@@ -1,23 +1,20 @@
 import React from 'react';
-import {
-  useGetPostsListQuery,
-  useGetPostsByIdQuery,
-  useCreatePostsMutation,
-  useDeletePostByIdMutation,
-  useModifyPostByIdMutation
-} from '@Api/posts';
+import { useGetPostsListQuery } from '@Api/posts';
 
 const Posts = () => {
-  const { data, error, isLoading } = useGetPostsListQuery();
-  console.log(data);
+  const { data, isLoading } = useGetPostsListQuery();
   return (
     <div>
-      {data?.map((post) => (
-        <div key={post.id}>
-          <div>{post.title}</div>
-          <div>{post.body}</div>
-        </div>
-      ))}
+      {isLoading ? (
+        <div>Loading</div>
+      ) : (
+        data?.map((post) => (
+          <div key={post.id}>
+            <div>{post.title}</div>
+            <div>{post.body}</div>
+          </div>
+        ))
+      )}
     </div>
   );
 };

@@ -1,4 +1,5 @@
 import { baseApi } from './base';
+import { POSTS } from '@Api/constants';
 
 interface IPost {
   userId: number;
@@ -9,15 +10,16 @@ interface IPost {
 
 const postApi = baseApi.injectEndpoints({
   endpoints: (builder) => ({
+    // eslint-disable-next-line @typescript-eslint/no-invalid-void-type
     getPostsList: builder.query<IPost[], void>({
-      query: () => '/posts'
+      query: () => POSTS
     }),
     getPostsById: builder.query<IPost, number>({
       query: (id: number) => `/posts/${id}`
     }),
     createPosts: builder.mutation({
       query: (data) => ({
-        url: '/posts',
+        url: POSTS,
         method: 'post',
         body: data
       })
@@ -44,9 +46,7 @@ export const {
   useGetPostsByIdQuery,
   useCreatePostsMutation,
   useDeletePostByIdMutation,
-  useModifyPostByIdMutation,
-  useLazyGetPostsListQuery,
-  useLazyGetPostsByIdQuery
+  useModifyPostByIdMutation
 } = postApi;
 
 export default postApi;

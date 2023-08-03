@@ -2,7 +2,7 @@ import React from 'react';
 import Login from '@Pages/Login';
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { renderWithProviders } from '@Utils/test-utils';
+import { renderWithProviders } from '@Utils/tests/test-utils';
 jest.mock('react-router-dom', () => ({
   ...jest.requireActual('react-router-dom'),
   useNavigate: jest.fn(() => () => {}),
